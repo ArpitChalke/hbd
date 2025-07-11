@@ -75,7 +75,9 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#FFC0CB';
+        // var color = '#fc7990';
+        // var color = '#fc8398';
+        var color = '#ff5c8a';
 
         this.heart = {
             point  : point,

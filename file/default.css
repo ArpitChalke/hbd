@@ -1,12 +1,43 @@
+/* GLOBAL */
+.balsamiq-sans-regular {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.balsamiq-sans-bold {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.balsamiq-sans-regular-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.balsamiq-sans-bold-italic {
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  max-width: 100%
+}
+
 body {
   margin: 0;
   padding: 0;
   /* background-image: url('../img2.png'); */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
+  background-color: #fcf9f3;
   font-size: 14px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "Balsamiq Sans", sans-serif;
   color: black;
   overflow: auto;
 }
@@ -21,11 +52,26 @@ a {
   background-color: white;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  display: flex;
+}
+
+#navbar>h1 {
+  font-size: 30px;
+  align-content: center;
+  margin: 20px;
 }
 
 /* MAIN SECTION */
 #main {
   width: 100%;
+  background-color: #FCF9F300;
+  background-image: url(https://templatekit.jegtheme.com/katy/wp-content/uploads/sites/24/2020/12/bg-home-katy-rev1@2x.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
 #wrap {
@@ -47,7 +93,9 @@ a {
 /* CANVAS TEXT */
 #code {
   display: none;
-  color: plum;
+  /* color: plum; */
+  color: #feb9cc;
+  text-shadow: 2px 2px white;
   font-size: 20px;
   margin-top: 70px;
   line-height: 25px;
@@ -109,22 +157,150 @@ a {
 
 }
 
+/* SECTION 1 */
+#section-1 {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #FEB9CC; */
+  background-color: #ffffff;
+  padding: 100px 0;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#greetings>h1 {
+  color: #12265A;
+  font-family: "Balsamiq Sans", Sans-serif;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  /* color: white; */
+  text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    0px -1px 0 #fff,
+    0px 1px 0 #fff,
+    -1px 0px 0 #fff,
+    1px 0px 0 #fff;
+}
+
+#greetings>p {
+  font-size: 35px;
+  color: #767c7c;
+  /* background-color: black; */
+  /* Creating border-like shadow */
+  /* text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000,
+    0px -1px 0 #000,
+    0px 1px 0 #000,
+    -1px 0px 0 #000,
+    1px 0px 0 #000; */
+}
+
+#photo-frame-1 {
+  align-items: center;
+  display: flex;
+}
+
+#photo-frame-1>img {
+  height: 450px;
+  /* background-image: url(../imgs/img-1.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1; */
+}
+
+#greetings {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+
+#greetings>h1 {
+  /* color: white; */
+  font-family: "Balsamiq Sans", Sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
 
 /* SECTION 2 */
 #section-2 {
   margin: 30px;
-  padding: 15px;
-  background-color: white;
-  border-radius: 25px;
+  background-color: #fcf9f3;
+  padding: 115px;
+  /* border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
   font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#section-2 p {
+  align-content: center;
 }
 
 .section-2-content {
   /* height: 300px; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin: 30px;
-  padding: 15px;
-  background-color: lightgoldenrodyellow;
   border-radius: 25px;
+  max-width: 1140px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.bg-2 {
+  background-image: url(../imgs/background-img-3.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.bg-1 {
+  background-image: url(../imgs/background-content.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+ 
+.bg-3 {
+  background-image: url(https://templatekit.jegtheme.com/katy/wp-content/uploads/sites/24/2020/12/bg-home-katy-rev1@2x.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.content-type-1 {
+  border-radius: 30px 100px 30px 100px;
+
+  background-color: #88D4F2;
+  align-content: center;
+  margin: 35px 0px;
+  padding: 40px 20px 40px 20px;
+  height: 500px;
+  width: 66%;
+  display: flex;
+}
+
+.content-type-2 {
+  border-radius: 30px 100px 30px 100px;
+  align-content: center;
+  background-color: #FEB9CC;
+  margin-right: 0px;
+  padding: 40px 20px 40px 20px;
+  height: 500px;
+  width: 66%;
+  display: flex;
 }
