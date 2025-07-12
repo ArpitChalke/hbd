@@ -241,6 +241,11 @@ a {
   font-size: 18px;
 }
 
+#section-2-content>div{
+  width: 300px;
+  font-size: 22px;
+}
+
 #section-2 p {
   align-content: center;
 }
@@ -256,6 +261,8 @@ a {
   margin-left: auto;
   position: relative;
   box-sizing: border-box;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .bg-2 {
@@ -273,7 +280,7 @@ a {
   background-size: cover;
   opacity: 1;
 }
- 
+
 .bg-3 {
   background-image: url(https://templatekit.jegtheme.com/katy/wp-content/uploads/sites/24/2020/12/bg-home-katy-rev1@2x.png);
   background-position: bottom center;
@@ -289,7 +296,6 @@ a {
   align-content: center;
   margin: 35px 0px;
   padding: 40px 20px 40px 20px;
-  height: 500px;
   width: 66%;
   display: flex;
 }
@@ -300,7 +306,10 @@ a {
   background-color: #FEB9CC;
   margin-right: 0px;
   padding: 40px 20px 40px 20px;
-  height: 500px;
   width: 66%;
   display: flex;
+}
+
+.content-containers {
+  width: max-content;
 }
